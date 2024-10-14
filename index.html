@@ -3,39 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>My Growth Log</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/@shadcn/ui/dist/shadcn.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>My growth log</h1>
-    <h2>100 Days of code day 1</h2>
-    <p>2024/10/10</p>
-    <h3>為什麼要寫成長日記</h3>
-    <p>我發覺我的生活每天都被各種死線追著跑，考完學測的那陣子，我為了讓自己生活看起來充實，我參加很多不同的活動與競賽（和泰公益比賽、
-        三星Solve for Tomorrow、兩岸青春Young計畫），我參加活動的初衷是想讓自己受各種Dead Line的壓迫往前走，但我發現我開始降低
-        自己的任務品質，開始為了做而做，不是讓自己成長而去做，我覺得我需要刻意的去檢視自己成長，而不是受環境影響漫步向前。
 
-    </p>
-    <h3>寫作與表達能力的喪失</h3>
-    <p>在ChatGPT出來後，我開始極度依賴它來處理生活中的文字訊息，這包括心得報告的撰寫、個人訊息回覆、文章翻譯，我發覺
-        我對於文字的敏感程度與使用文字表達想法的能力越來越弱，在自己撰寫文章時對各種詞語的用法開始感到陌生，我認為原因可能
-        是我的閱讀量太少（缺乏閱讀習慣）以及過度依賴GAI工具，不可否認的是，GPT的文字與用詞比我的用詞好不少，但這不是我停止
-        自己撰寫文字的藉口，練習使用文字表達想法也能加強我的邏輯組織能力。
-    </p>
-    <p>不知從何時開始，我開時回避自己想法的表達，因為我覺得我害怕我的口吃與邏輯漏洞，讓我無法說服別人，我開始習慣性的壓抑
-    自己的想法，一個念頭要在腦中反覆琢磨與確認才敢把他講出來，但這樣做不但徒增自己的心理壓力，也導致自己無法盡興地和他人暢談。</p>
-    <h3>成長，無限進步</h3>
-    <p>上大學後發覺身邊的人都在不同領域發光發熱，我開始懷疑自己到底有什麼能力，我實在想不到，我只有對自己的盲目自信，
-        覺得自己好像可以把不同的事情做好，只要我想的話，但事實證明並不是，我2023的三星比賽就沒有拿第一名，學測成績也考的一團糟。
-        
-    </p>
-    <p>這或許是一篇充滿冗言贅字與邏輯謬誤的流水帳，但這正是我開始撰寫成長日記的原因，我想讓自己變得更強、更有自信、更有個人魅力，
-        而能達成我目標的不是完整且詳細的計畫，而是 「做」與「寫」，將自己每天的進步寫下來，然後每3天檢討自己的成長，我要擁抱自己的錯誤與
-        能力不足，而不是對自身能力的盲目自信，只有這樣才能變得更強
-    </p>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 class="text-4xl font-bold">My Growth Log</h1>
+            <p class="text-gray-600">100 Days of Code Journal</p>
+        </header>
 
-    <h3>what have I learned today</h3>
-    <ul>
-        <li>General Physics: Newton laws</li>
-    </ul>
+        <div class="bg-white p-6 rounded-lg shadow-md" id="markdown-content"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="./src/script.js"></script>
 </body>
 </html>
