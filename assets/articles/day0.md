@@ -1,4 +1,4 @@
-# 100 Days of code 0: 正式啟動
+# 100 Days of code: day0 正式啟動
 DATE: 2024/10/15(二)  
 weather: cloudy  
 direction: 昨天考完了所有考試的 Midterm，最近準備全力衝刺三星比賽的 Final Project
