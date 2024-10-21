@@ -1,7 +1,0 @@
-{
-    "days": [
-      {"day": "Day -1", "file": "day-1.md"},
-      {"day": "Day 0", "file": "day0.md"},
-      {"day": "Day 1", "file": "day1.md"}
-    ]
-  }

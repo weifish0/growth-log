@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+# 觸發條件：當推送到 main 分支時觸發
+on:
+  push:
+    branches:
+      - main
+
+# 工作流程執行的 jobs
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install mkdocs and dependencies
+      run: |
+        pip install mkdocs mkdocs-material
+
+    - name: Build the site
+      run: |
+        mkdocs build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
+        publish_branch: gh-pages
